@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="notificationLab" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,64 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vZM-qg-rXH">
+                                <rect key="frame" x="150" y="28" width="300" height="100"/>
+                                <subviews>
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="250px-026Raichu" translatesAutoresizingMaskIntoConstraints="NO" id="x8x-nC-Ry1" customClass="UITouchImageView">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="IRr-yb-i7d"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="250px-149Dragonite" translatesAutoresizingMaskIntoConstraints="NO" id="Whc-Yl-TQD" customClass="UITouchImageView">
+                                        <rect key="frame" x="100" y="0.0" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="Xsb-8G-Fh4"/>
+                                            <constraint firstAttribute="width" constant="100" id="aDF-Iu-RTJ"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="250px-150Mewtwo" translatesAutoresizingMaskIntoConstraints="NO" id="2WP-zJ-rxb" customClass="UITouchImageView">
+                                        <rect key="frame" x="200" y="0.0" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="aGj-Ib-VLA"/>
+                                            <constraint firstAttribute="width" constant="100" id="wpW-Tf-Tmt"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pokeball" translatesAutoresizingMaskIntoConstraints="NO" id="qmF-bH-T1z">
+                                <rect key="frame" x="225" y="430" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="RpX-H1-Apk"/>
+                                    <constraint firstAttribute="height" constant="150" id="dds-z2-64o"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vZM-qg-rXH" firstAttribute="centerX" secondItem="qmF-bH-T1z" secondAttribute="centerX" id="5pK-Ti-GFg"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="qmF-bH-T1z" secondAttribute="bottom" constant="20" id="KCb-qK-8dk"/>
+                            <constraint firstItem="qmF-bH-T1z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZLL-Gy-oMi"/>
+                            <constraint firstItem="vZM-qg-rXH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="mlu-GX-kQ5"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="dragonnite" destination="Whc-Yl-TQD" id="KWY-Qv-5ZB"/>
+                        <outlet property="mewtwo" destination="2WP-zJ-rxb" id="0aZ-vm-6ch"/>
+                        <outlet property="pokeball" destination="qmF-bH-T1z" id="Tvd-oa-sBp"/>
+                        <outlet property="raichu" destination="x8x-nC-Ry1" id="xw5-L0-9Xh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="245" y="308"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="250px-026Raichu" width="250" height="250"/>
+        <image name="250px-149Dragonite" width="250" height="250"/>
+        <image name="250px-150Mewtwo" width="250" height="250"/>
+        <image name="Pokeball" width="300" height="301"/>
+    </resources>
 </document>

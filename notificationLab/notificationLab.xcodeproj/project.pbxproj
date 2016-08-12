@@ -12,6 +12,7 @@
 		FFBD2C6C1D5E03820068ED69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFBD2C6A1D5E03820068ED69 /* Main.storyboard */; };
 		FFBD2C6E1D5E03820068ED69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFBD2C6D1D5E03820068ED69 /* Assets.xcassets */; };
 		FFBD2C711D5E03820068ED69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFBD2C6F1D5E03820068ED69 /* LaunchScreen.storyboard */; };
+		FFBD2C791D5E08EC0068ED69 /* UITouchImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBD2C781D5E08EC0068ED69 /* UITouchImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		FFBD2C6D1D5E03820068ED69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFBD2C701D5E03820068ED69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FFBD2C721D5E03820068ED69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFBD2C781D5E08EC0068ED69 /* UITouchImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITouchImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		FFBD2C651D5E03820068ED69 /* notificationLab */ = {
 			isa = PBXGroup;
 			children = (
+				FFBD2C781D5E08EC0068ED69 /* UITouchImageView.swift */,
 				FFBD2C661D5E03820068ED69 /* AppDelegate.swift */,
 				FFBD2C681D5E03820068ED69 /* ViewController.swift */,
 				FFBD2C6A1D5E03820068ED69 /* Main.storyboard */,
@@ -137,6 +140,7 @@
 			files = (
 				FFBD2C691D5E03820068ED69 /* ViewController.swift in Sources */,
 				FFBD2C671D5E03820068ED69 /* AppDelegate.swift in Sources */,
+				FFBD2C791D5E08EC0068ED69 /* UITouchImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

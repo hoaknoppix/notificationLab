@@ -10,16 +10,26 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var pokeball: UIImageView!
+    @IBOutlet weak var mewtwo: UITouchImageView!
+    @IBOutlet weak var dragonnite: UITouchImageView!
+    @IBOutlet weak var raichu: UITouchImageView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
 
+}
+
+extension ViewController: UITouchImageViewDelegate {
+
+    func onTouch(imageView: UITouchImageView) {
+        
+    }
 }
 
