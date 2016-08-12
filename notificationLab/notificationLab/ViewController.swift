@@ -17,6 +17,9 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        mewtwo.delegate = self
+        dragonnite.delegate = self
+        raichu.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,7 +32,11 @@ class ViewController: UIViewController {
 extension ViewController: UITouchImageViewDelegate {
 
     func onTouch(imageView: UITouchImageView) {
-        
+        mewtwo.layer.borderWidth = 0
+        dragonnite.layer.borderWidth = 0
+        raichu.layer.borderWidth = 0
+        imageView.layer.borderWidth = 10
+        imageView.layer.borderColor = UIColor.redColor().CGColor
     }
 }
 
